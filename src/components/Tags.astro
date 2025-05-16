@@ -7,7 +7,7 @@ tags = tags ?? [...new Set(allPosts.flatMap((post: any) => post.data.tags))];
 ---
 
 <div class="tags">
-{tags.map((tag) => <a class="tag" href={`/astro-tutorial/tags/${tag}`}>{tag}</a>)}
+{tags.map((tag:string) => <a class="tag" href={`/astro-tutorial/tags/${tag}`}>{tag}</a>)}
 </div>
 
 <style>
